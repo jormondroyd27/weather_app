@@ -7,4 +7,4 @@ app = Flask(__name__)
 # map this application to a route
 @app.route('/')
 def index():
-    return "Chuckin' it down!!!!"
+    return render_template('index.html')
