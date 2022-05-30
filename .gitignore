@@ -1,0 +1,4 @@
+# virtual environment
+weather_env/
+# environment variables
+.env
