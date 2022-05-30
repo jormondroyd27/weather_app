@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index.css') }}">
+    <script src="https://kit.fontawesome.com/ef3a3942e7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Weather App.</title>
+</head>
+<body>
+    <div class="background">
+        <div class="card">
+            <div class="title">
+                <h1>A simple weather app.</h1>
+            </div>
+            <div class="icon-list">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-cloud"></i>
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <i class="fa-solid fa-tornado"></i>
+                <i class="fa-solid fa-temperature-half"></i>
+            </div>
+            <div class="form">
+                <form action="{{ url_for('post_weather')}}" method="post">
+                    <input class="input-text" type="text" id="city" name="city" placeholder="Search for a city" required>
+                    <input type="submit" value="Submit!">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

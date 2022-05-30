@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='results.css') }}">
+    <script src="https://kit.fontawesome.com/ef3a3942e7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ location }}</title>
+</head>
+<body>
+    <div class="background">
+        <div class="card">
+            <form action="{{ url_for('index')}}">
+                    <input type="submit" value="Go Back">
+            </form>
+            <div class="title">
+                <h1>A simple weather app.</h1>
+            </div>
+            <div class="icon-list">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-cloud"></i>
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <i class="fa-solid fa-tornado"></i>
+                <i class="fa-solid fa-temperature-half"></i>
+            </div>
+            <div class="information">
+                <p class="location">{{ location }}, {{ country }}</p>
+                <p class="temp">{{ temp }}°</p>
+                {% if description == 'Thunderstorm' %}
+                    <p>{{ description }} <i class="fa-solid fa-bolt-lightning"></i></p>
+                    <p>It's stormy outside today, stay indoors!</p>
+                {% elif description == 'Drizzle' %}
+                    <p>{{ description }} <i class="fa-solid fa-cloud-drizzle"></i></p>
+                    <p>A bit of light drizzle never hurt no one.</p>
+                {% elif description == 'Rain' %}
+                    <p>{{ description }} <i class="fa-solid fa-cloud-rain"></i></p>
+                    <p>I'd get your rainjacket on before stepping outside.</p>
+                {% elif description == 'Snow' %}
+                    <p>{{ description }} <i class="fa-solid fa-snowflake"></i></p>
+                    <p>Time to build a snowman!</p>
+                {% elif description == 'Smoke' %}
+                    <p>{{ description }} <i class="fa-solid fa-smoke"></i></p>
+                    <p>Feel's like a giant bbq outside.</p>
+                {% elif description == 'Haze' %}
+                    <p>{{ description }} <i class="fa-solid fa-sun-haze"></i></p>
+                    <p>Crack open a bottle of Hazy Jane, delicious.</p>
+                {% elif description == 'Dust' %}
+                    <p>{{ description }} <i class="fa-solid fa-sun-dust"></i></p>
+                    <p>I hope you brought your sweeping brush with you.</p>
+                {% elif description == 'Fog' %}
+                    <p>{{ description }} <i class="fa-regular fa-cloud-fog"></i></p> 
+                    <p>Can't see anything? Nope, me neither.</p>  
+                {% elif description == 'Tornado' %}
+                    <p>{{ description }} <i class="fa-solid fa-tornado"></i></p> 
+                    <p>I think I might just turn back around and giddy up outta here.</p>
+                {% elif description == 'Clear'%} 
+                    <p>{{ description }} <i class="fa-solid fa-sun"></i></p>
+                    <p>Very pleasant!</p>
+                {% elif description == 'Clouds'%} 
+                    <p>{{ description }} <i class="fa-solid fa-clouds"></i></p>
+                    <p>Not a terrible day by any means.</p>
+                {% else %}
+                    <p>{{ description }}</p>
+                {% endif %}
+                <p>H:{{ max }}° L:{{ min }}°</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

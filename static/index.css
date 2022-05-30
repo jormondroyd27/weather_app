@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
+    height: 100%;
+    margin: 0em;
+}
+
+.background {
+    background: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: lightsalmon;
+    border-radius: 0.5em;
+    height: 40em;
+    width: 60em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title {
+    text-align: center; 
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    color: #FFF;
+}
+.icon-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 500px;
+}
+
+i {
+    color: lightyellow;
+}
+
+.form {
+    margin-top: 2.5em;
+    text-align: center; 
+    font-family: monospace;
+    height: 100px;
+    width: 500px;
+    /* border: 1px solid black; */
+    background: #FFF;
+    border-radius: 1em;
+}
+
+form {
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.2em;
+}
+
+input[type=text], textarea {
+    background: #FFF;
+    border-bottom: #FFF;
+    border: none;
+    border-bottom: #FFF;
+    color: lightsalmon;
+    font-size: 1.4em;
+}
+
+input[type=text], textarea:focus {
+    outline: none;
+}
+
+input[type=submit], textarea {
+    padding: 0.5em;
+    background: lightyellow;
+    border-bottom: #FFF;
+    border: 2px solid lightsalmon;
+    border-radius: 1.5em;
+    color: lightsalmon;
+    font-size: 1.4em;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background: lightsalmon;
+    color: lightyellow;
+    border: 2px solid lightyellow;
+}

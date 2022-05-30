@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
+    height: 100%;
+    margin: 0em;
+}
+
+.background {
+    background: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: lightsalmon;
+    border-radius: 0.5em;
+    height: 40em;
+    width: 60em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type=submit], textarea {
+    padding: 0.5em;
+    background: lightyellow;
+    border-bottom: #FFF;
+    border: 2px solid lightsalmon;
+    border-radius: 1.5em;
+    color: lightsalmon;
+    font-size: 1.4em;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background: lightsalmon;
+    color: lightyellow;
+    border: 2px solid lightyellow;
+}
+
+.title {
+    text-align: center; 
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    color: #FFF;
+    margin-top: 5px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 500px;
+}
+
+i {
+    color: lightyellow;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-family: monospace;
+    color: #FFF;
+    margin: 0;
+}
+p.location {
+    font-size: 2em;
+}
+
+p.temp {
+    font-size: 5em;
+}
