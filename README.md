@@ -25,7 +25,7 @@ pip install python-dotenv
 pip install requests
 ```
 
-Next up is storing your environment variables, in this case it will be your API key, you can create an account at https://openweathermap.org and create an API key. Next, create a .env file, this type of file will not be committed to the git repository, and so, anything stored in this file will remain secure. Keep it secret, keep it safe. 
+Next up is storing your environment variables, in this case it will be your API key, you can create an account at https://openweathermap.org and create an API key. Next, create a .env file, this type of file will not be committed to the git repository, this way anything stored in this file will remain secure. Keep it secret, keep it safe. 
 
 
 
