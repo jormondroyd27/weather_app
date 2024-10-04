@@ -1,5 +1,5 @@
 # weather_app
-A Web Application made with the Flask web framework.
+A Web Application made with Python, the Flask web framework, HTML, and CSS.
 
 To get started, first create a virtual environment by using the following command:
 
